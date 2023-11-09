@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/scss/fonts";
+@import "assets/scss/font-variables";
+
+$color-path: "src/assets/scss/colors";
+
+html,
+body {
+    font-family: $Poppins-Regular;
+    color: #333;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 0;
+}
+
