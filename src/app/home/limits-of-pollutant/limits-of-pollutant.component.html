@@ -1,0 +1,6 @@
+<div class="box-shadow no-padding limits">
+  <div class="limit" [ngClass]="limit.color" *ngFor="let limit of limits">
+    <span class="limit-name">{{ limit.name }} </span>
+    <span class="limit-color"> {{ limit.range }}</span>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="box-shadow">
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>GRAD</th>
+          <th>DATUM</th>
+          <th>AQI</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          app-city-item
+          *ngFor="let city of cities; index as i"
+          [city]="city"
+          [i]="i"
+        ></tr>
+      </tbody>
+    </table>
+  </div>
+</div>

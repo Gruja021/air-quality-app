@@ -1,37 +1,38 @@
 @import "src/assets/scss/colors";
+@import "src/assets/scss/variables";
 
 .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: $orange-peel;
-    color: white;
-    font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $toolbar-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $orange-peel;
+  color: white;
+  font-weight: 600;
+  h2 {
+    margin-left: 16px
   }
+}
 
-  .toolbar img {
-    margin: 0 16px;
-  }
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 8px;
+}
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
+.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
 
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+  opacity: 0.8;
+}
 
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
-    opacity: 0.8;
-  }
-
-  .spacer {
-    flex: 1;
-  }
+.spacer {
+  flex: 1;
+}

@@ -1,0 +1,6 @@
+@import "src/assets/scss/variables";
+
+:host {
+    width: 66.7%;
+    padding-left: $container-separator;
+}

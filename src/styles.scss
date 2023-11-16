@@ -1,14 +1,16 @@
 @import "assets/scss/fonts";
 @import "assets/scss/font-variables";
+@import "src/assets/scss/variables";
 
 $color-path: "src/assets/scss/colors";
 
 html,
 body {
-    font-family: $Poppins-Regular;
-    color: #333;
-    box-sizing: border-box;
-    font-size: 14px;
+  font-family: $Poppins-Regular;
+  color: #333;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 0;
 }
 
 h1,
@@ -17,10 +19,53 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 8px 0;
+  margin: 8px 0;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
+.content-wrapper {
+  width: 75%;
+  display: flex;
+}
+.box-shadow {
+  border-radius: $border-radius;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  margin-bottom: 16px;
+  height: inherit;
+  background-color: #fff;
+}
+.no-padding {
+  padding: 0;
+}
+.green {
+  background-color: #64dd17;
+}
+.yellow {
+  background-color: #ffb73f;
+}
+.orange {
+  background-color: #ffa726;
+}
+.pink {
+  background-color: #e91e63;
+}
+.purple {
+  background-color: #ab47bc;
+}
+.deepPurple {
+  background-color: #4a148c;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  border-radius: 5px;
+}

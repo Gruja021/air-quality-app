@@ -1,0 +1,33 @@
+@import "src/assets/scss/variables";
+
+:host {
+ 
+}
+.limits {
+  display: flex;
+  flex: 1;
+}
+.limit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+  .limit-name {
+    padding-bottom: 4px;
+  }
+  .limit-color {
+    padding-bottom: 4px;
+  }
+  &:first-child {
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+  }
+  &:last-child {
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+}

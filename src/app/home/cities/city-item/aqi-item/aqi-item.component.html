@@ -1,0 +1,19 @@
+<container-element [ngSwitch]="true">
+  <div class="aqiData green" *ngSwitchCase="0 <= aqi && aqi <= 50">
+    {{ aqi }}
+  </div>
+  <div class="aqiData yellow" *ngSwitchCase="51 <= aqi && aqi <= 100">
+    {{ aqi }}
+  </div>
+  <div class="aqiData orange" *ngSwitchCase="101 <= aqi && aqi <= 150">
+    {{ aqi }}
+  </div>
+  <div class="aqiData pink" *ngSwitchCase="151 <= aqi && aqi <= 200">
+    {{ aqi }}
+  </div>
+  <div class="aqiData purple" *ngSwitchCase="201 <= aqi && aqi <= 300">
+    {{ aqi }}
+  </div>
+  <div class="aqiData deepPurple" *ngSwitchCase="aqi > 300">{{ aqi }}</div>
+  <div *ngSwitchDefault class="aqiData grey">-</div>
+</container-element>
