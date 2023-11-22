@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LimitsOfPollutantComponent } from './limits-of-pollutant/limits-of-pollutant.component';
 import { AqiItemComponent } from './cities/city-item/aqi-item/aqi-item.component';
 import { CityItemComponent } from './cities/city-item/city-item.component';
+import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,6 @@ import { CityItemComponent } from './cities/city-item/city-item.component';
     CityItemComponent,
   ],
   exports: [HomeComponent],
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, HomeRoutingModule],
 })
 export class HomeModule {}

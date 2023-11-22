@@ -1,6 +1,12 @@
-<td>{{ i + 1 }}.</td>
-<td>{{ _city.station.name.replace(", Serbia", "") }}</td>
-<td>{{ time }}</td>
-<td>
-  <app-aqi-item [aqi]="_city.aqi"></app-aqi-item>
-</td>
+<div
+  class="city-item"
+  [routerLink]="['location']"
+  [queryParams]="{ lat: _city.station.geo[0], long: _city.station.geo[1] }"
+>
+  <td>{{ i + 1 }}.</td>
+  <td>{{ _city.station.name.replace(", Serbia", "") }}</td>
+  <td>{{ time }}</td>
+  <td>
+    <app-aqi-item [aqi]="_city.aqi"></app-aqi-item>
+  </td>
+</div>

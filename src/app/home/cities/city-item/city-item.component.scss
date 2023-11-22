@@ -1,6 +1,8 @@
 :host {
   width: 100%;
-
+  .city-item {
+    display: contents;
+  }
   td {
     font-size: 16px;
     padding: 4px 0;
