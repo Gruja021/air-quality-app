@@ -1,1 +1,12 @@
-<p>city-panel works now!</p>
+<div class="city-panel" [ngStyle]="{ color: panelData.textColor }">
+  <div class="text-wrapper">
+    <div class="aqi-wrapper">
+      <h1>{{ _aqi }}</h1>
+    </div>
+    <div>
+      <h2>{{ name.replace(", Serbia", "") }}</h2>
+      <h3>{{ panelData.name }}</h3>
+    </div>
+  </div>
+  <img [src]="'assets/icons/' + panelData.icon" alt="icon" />
+</div>

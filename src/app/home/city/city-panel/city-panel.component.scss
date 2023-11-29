@@ -1,0 +1,22 @@
+@import "src/assets/scss/font-variables.scss";
+
+.city-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  .text-wrapper {
+    display: flex;
+  }
+  .aqi-wrapper {
+    padding-right: 24px;
+    padding-left: 16px;
+    h1 {
+      font-size: $font-size-50;
+    }
+  }
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -8,6 +8,7 @@ import { LimitsOfPollutantComponent } from './limits-of-pollutant/limits-of-poll
 import { AqiItemComponent } from './cities/city-item/aqi-item/aqi-item.component';
 import { CityItemComponent } from './cities/city-item/city-item.component';
 import { HomeRoutingModule } from './home-routing.module';
+import { CityPanelComponent } from './city/city-panel/city-panel.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HomeRoutingModule } from './home-routing.module';
     LimitsOfPollutantComponent,
     AqiItemComponent,
     CityItemComponent,
+    CityPanelComponent,
   ],
   exports: [HomeComponent],
   imports: [CommonModule, HttpClientModule, HomeRoutingModule],

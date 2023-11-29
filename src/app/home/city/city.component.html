@@ -1,1 +1,7 @@
-<div class="box-shadow">test</div>
+<div class="box-shadow" [ngClass]="backColor">
+  <app-city-panel
+    [aqi]="cityDetails.data.aqi"
+    [name]="cityDetails.data.city.name"
+    (colorEvent)="receiveColor($event)"
+  ></app-city-panel>
+</div>
