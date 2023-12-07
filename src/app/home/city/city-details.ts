@@ -60,6 +60,8 @@ interface Iaqi {
   t: Dew;
   w: Dew;
   wg: Dew;
+  co: Dew;
+  o3: Dew;
 }
 
 interface Dew {

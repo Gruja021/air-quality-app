@@ -1,3 +1,33 @@
-<p>
-  city-monitoring works!
-</p>
+<h2>Ocena kvaliteta vazduha prema vazecim kriterijumima</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Zagadjuca materija</th>
+      <th>Min</th>
+      <th></th>
+      <th>Max</th>
+      <th>Koncentracija</th>
+    </tr>
+  </thead>
+  <ng-container *ngFor="let cityDetails of cityDetailsNew">
+    <tbody app-monitoring-table [cityDetails]="cityDetails"></tbody>
+  </ng-container>
+</table>
+<br />
+<h2>
+  Ocena kvaliteta vazduha prema kriterijumima koji su vazili do oktobra 2020
+</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Zagadjuca materija</th>
+      <th>Min</th>
+      <th></th>
+      <th>Max</th>
+      <th>Koncentracija</th>
+    </tr>
+  </thead>
+  <ng-container *ngFor="let cityDetails of cityDetailsOld">
+    <tbody app-monitoring-table [cityDetails]="cityDetails"></tbody>
+  </ng-container>
+</table>

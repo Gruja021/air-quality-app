@@ -9,6 +9,9 @@ import { AqiItemComponent } from './cities/city-item/aqi-item/aqi-item.component
 import { CityItemComponent } from './cities/city-item/city-item.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { CityPanelComponent } from './city/city-panel/city-panel.component';
+import { CityMonitoringComponent } from './city/city-monitoring/city-monitoring.component';
+import { MonitoringTableComponent } from './city/city-monitoring/monitoring-table/monitoring-table.component';
+import { ProgressBarComponent } from './city/city-monitoring/monitoring-table/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { CityPanelComponent } from './city/city-panel/city-panel.component';
     AqiItemComponent,
     CityItemComponent,
     CityPanelComponent,
+    CityMonitoringComponent,
+    MonitoringTableComponent,
+    ProgressBarComponent,
   ],
   exports: [HomeComponent],
   imports: [CommonModule, HttpClientModule, HomeRoutingModule],

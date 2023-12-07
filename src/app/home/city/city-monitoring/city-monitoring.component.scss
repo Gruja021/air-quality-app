@@ -1,0 +1,38 @@
+:host {
+  .city-monitoring {
+    display: flex;
+  }
+  table {
+    width: 100%;
+  }
+  table,
+  th {
+    border-collapse: collapse;
+  }
+  th,
+  th:first-child {
+    text-align: left;
+    width: 130px;
+  }
+  th:nth-child(2) {
+    text-align: center;
+  }
+  th:nth-child(4) {
+    text-align: center;
+  }
+  th:last-child {
+    text-align: right;
+    width: 130px;
+  }
+  table {
+    thead {
+      th {
+        font-size: 12px;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+        background: white;
+      }
+    }
+  }
+}

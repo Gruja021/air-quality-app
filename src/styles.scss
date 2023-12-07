@@ -44,20 +44,38 @@ p {
 .green {
   background-color: #64dd17;
 }
+.light-green {
+  background-color: rgba($color: #64dd17, $alpha: 0.3);
+}
 .yellow {
   background-color: #ffb73f;
+}
+.light-yellow {
+  background-color: rgba($color: #ffb73f, $alpha: 0.3);
 }
 .orange {
   background-color: #ffa726;
 }
+.light-orange {
+  background-color: rgba($color: #ffa726, $alpha: 0.3);
+}
 .pink {
   background-color: #e91e63;
+}
+.light-pink {
+  background-color: rgba($color: #e91e63, $alpha: 0.3);
 }
 .purple {
   background-color: #ab47bc;
 }
+.light-purple {
+  background-color: rgba($color: #ab47bc, $alpha: 0.3);
+}
 .deepPurple {
   background-color: #4a148c;
+}
+.light-deep-purple {
+  background-color: rgba($color: #4a148c, $alpha: 0.3);
 }
 ::-webkit-scrollbar {
   width: 10px;

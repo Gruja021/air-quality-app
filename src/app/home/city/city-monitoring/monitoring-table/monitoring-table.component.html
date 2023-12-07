@@ -1,0 +1,26 @@
+<tr *ngIf="_cityDetails.polutantValue; else elseBlock">
+  <td>{{ progressBarValue.polutant }}</td>
+  <td>{{ min }}</td>
+  <td>
+    <app-progress-bar
+      *ngIf="progressBarValue.criteria"
+      [progressBarValue]="progressBarValue"
+      (min)="receiveMin($event)"
+      (max)="receiveMax($event)"
+    ></app-progress-bar>
+  </td>
+  <td>{{ max }}</td>
+  <td>
+    {{ progressBarValue.convertedValue }}
+    {{ _cityDetails.polutant === "CO" ? "mg/m³" : "µg/m³" }}
+  </td>
+</tr>
+<ng-template #elseBlock>
+  <tr>
+    <td>{{ progressBarValue.polutant }}</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Nepoznat</td>
+  </tr>
+</ng-template>

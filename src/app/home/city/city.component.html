@@ -1,7 +1,15 @@
 <div class="box-shadow" [ngClass]="backColor">
   <app-city-panel
+    *ngIf="cityDetails"
     [aqi]="cityDetails.data.aqi"
     [name]="cityDetails.data.city.name"
     (colorEvent)="receiveColor($event)"
   ></app-city-panel>
+</div>
+<div class="box-shadow no-margin-bottom">
+  <app-city-monitoring
+    [cityDetails]="cityDetails"
+    [cityDetailsNew]="cityDetailsNew"
+    [cityDetailsOld]="cityDetailsOld"
+  ></app-city-monitoring>
 </div>

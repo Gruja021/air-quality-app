@@ -2,7 +2,7 @@
 @import "src/assets/scss/variables";
 
 .toolbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -13,8 +13,9 @@
   background-color: $orange-peel;
   color: white;
   font-weight: 600;
+  z-index: 1000;
   h2 {
-    margin-left: 16px
+    margin-left: 16px;
   }
 }
 
