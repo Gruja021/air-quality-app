@@ -1,8 +1,17 @@
 <div class="home-wrapper">
   <h1>Kvalitet vazduha u realnom vremenu</h1>
-  <app-limits-of-pollutant></app-limits-of-pollutant>
-  <div class="home-container-wrapper">
-    <app-cities></app-cities>
+  <div class="first-view">
+    <app-limits-of-pollutant></app-limits-of-pollutant>
+    <div class="home-container-wrapper">
+      <app-cities></app-cities>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="second-view">
+    <div class="home-container-wrapper">
+      <app-limits-of-pollutant></app-limits-of-pollutant>
+      <app-cities></app-cities>
+    </div>
     <router-outlet></router-outlet>
   </div>
 </div>

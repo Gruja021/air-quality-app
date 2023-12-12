@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
 import { enviroment } from 'src/enviroments/enviroment';
+import { CitiesObj } from './cities-list';
 
 const TOKEN = `token=${enviroment.apiWaqiToken}`;
 
@@ -10,11 +11,11 @@ const TOKEN = `token=${enviroment.apiWaqiToken}`;
 })
 export class CitiesService {
   constructor(private http: HttpClient) {}
-  getCityParams() {
+  getCityParams(city = 'Serbia') {
     return this.http
-      .get<any>(`https://api.waqi.info/search/?keyword=serbia&${TOKEN}`)
+      .get<any>(`https://api.waqi.info/search/?keyword=${city}&${TOKEN}`)
       .pipe(
-        map((res: any) => {
+        map((res: CitiesObj) => {
           return res;
         })
       );

@@ -1,3 +1,9 @@
+<div class="input-wrapper">
+  <form (submit)="onSubmit()">
+    <input type="search" id="site-search" name="q" [(ngModel)]="cityName" />
+    <button type="submit">Pretraži</button>
+  </form>
+</div>
 <div class="cities">
   <table>
     <thead>

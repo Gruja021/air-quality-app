@@ -8,9 +8,15 @@ import { HomeModule } from './home/home.module';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpErrorInterceptor } from './interceptors/http-error-interceptor.service';
 import { AppRoutingModule } from './app-routing.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, ToolbarComponent, CloudsBgComponent],
+  declarations: [
+    AppComponent,
+    ToolbarComponent,
+    CloudsBgComponent,
+    FooterComponent,
+  ],
   imports: [BrowserModule, HomeModule, AppRoutingModule],
   providers: [
     {

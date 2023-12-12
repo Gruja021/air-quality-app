@@ -24,6 +24,7 @@
   td:nth-child(2) {
     font-size: $font-size-xxs;
     text-align: center;
+    padding: 0 5px;
   }
   td:nth-child(3) {
     flex: 1;
@@ -32,6 +33,7 @@
   td:nth-child(4) {
     font-size: $font-size-xxs;
     text-align: center;
+    padding: 0 5px;
   }
   td {
     border-collapse: collapse;
@@ -44,6 +46,7 @@
   td:last-child {
     text-align: right;
     width: 130px;
+    white-space: nowrap;
   }
   td:nth-child(3) {
     font-size: 16px;

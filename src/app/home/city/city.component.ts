@@ -37,6 +37,7 @@ export class CityComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    console.log('test test');
     this.route.queryParams.subscribe((params) =>
       this.getData(params as CityLocation)
     );
@@ -46,6 +47,9 @@ export class CityComponent implements OnInit {
   }
 
   getData(params: CityLocation) {
+    if (Object.keys(params).length === 0 && params.constructor === Object) {
+      params = { lat: '45.262626', long: '19.819016' };
+    }
     this.cityDetailsService
       .getCityParams(params.lat, params.long)
       .subscribe((res: CityDetails) => {

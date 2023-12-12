@@ -2,6 +2,7 @@
   class="city-item"
   [routerLink]="['location']"
   [queryParams]="{ lat: _city.station.geo[0], long: _city.station.geo[1] }"
+  *ngIf="_city.aqi !== '-'"
 >
   <td>{{ i + 1 }}.</td>
   <td>{{ _city.station.name.replace(", Serbia", "") }}</td>

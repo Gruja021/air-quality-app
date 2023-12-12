@@ -12,6 +12,7 @@ import { CityPanelComponent } from './city/city-panel/city-panel.component';
 import { CityMonitoringComponent } from './city/city-monitoring/city-monitoring.component';
 import { MonitoringTableComponent } from './city/city-monitoring/monitoring-table/monitoring-table.component';
 import { ProgressBarComponent } from './city/city-monitoring/monitoring-table/progress-bar/progress-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,6 @@ import { ProgressBarComponent } from './city/city-monitoring/monitoring-table/pr
     ProgressBarComponent,
   ],
   exports: [HomeComponent],
-  imports: [CommonModule, HttpClientModule, HomeRoutingModule],
+  imports: [CommonModule, HttpClientModule, HomeRoutingModule, FormsModule],
 })
 export class HomeModule {}

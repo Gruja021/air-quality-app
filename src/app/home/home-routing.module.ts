@@ -5,7 +5,7 @@ import { CityComponent } from './city/city.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
     children: [
       {
