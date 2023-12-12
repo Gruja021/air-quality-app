@@ -25,7 +25,8 @@
       margin-right: 10px;
       font-size: 20px;
     }
-    input:focus {
+    input[type="search"]:focus {
+      outline: none;
       border: 3px solid #1166ee;
     }
     button {
